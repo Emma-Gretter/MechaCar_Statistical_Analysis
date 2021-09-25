@@ -1,0 +1,5 @@
+library(dplyr)
+data_table <- read.csv(file='Desktop/gitfolder/R_analysis/Challenge/MechaCar_mpg.csv',check.names=F,stringsAsFactors = F)
+View(data_table)
+lm(mpg ~ vehicle_length + vehicle_weight + spoiler_angle + ground_clearance + AWD,data=data_table)
+summary(lm(mpg ~ vehicle_length + vehicle_weight + spoiler_angle + ground_clearance + AWD,data=data_table))
